@@ -1,0 +1,15 @@
+body{
+    margin: auto;
+    width: 1000px;
+}
+.head{
+    height: 200px;
+    width: 1000px;
+}
+li{list-style:none;}
+table{
+    width: 600px;
+}
+tr{
+    text-align:center;
+}
