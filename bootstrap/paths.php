@@ -1,5 +1,8 @@
 <?php
-
+if(!isset($____app_path)){
+    $____app_path='app';
+    $____public_path='userpublic';
+}
 return array(
 
 	/*
@@ -13,7 +16,7 @@ return array(
 	|
 	*/
 
-	'app' => __DIR__.'/../app',
+	'app' => __DIR__.'/../'.$____app_path,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +29,7 @@ return array(
 	|
 	*/
 
-	'public' => __DIR__.'/../public',
+	'public' => __DIR__.'/../'.$____public_path,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,6 +55,6 @@ return array(
 	|
 	*/
 
-	'storage' => __DIR__.'/../app/storage',
+	'storage' => __DIR__.'/../'.$____public_path.'/storage',
 
 );

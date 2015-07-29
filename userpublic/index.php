@@ -18,6 +18,9 @@
 |
 */
 
+$____app_path = 'userapp';
+$____public_path = basename(__DIR__);
+
 require __DIR__.'/../bootstrap/autoload.php';
 
 /*
