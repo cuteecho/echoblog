@@ -55,6 +55,6 @@ return array(
 	|
 	*/
 
-	'storage' => __DIR__.'/../'.$____public_path.'/storage',
+	'storage' => __DIR__.'/../'.$____app_path.'/storage',
 
 );
