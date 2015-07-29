@@ -13,6 +13,7 @@ class LoginController extends Controller{
             echo "已经登陆";
         }else if(Request::method() == 'POST'){
             $username=Input::get('username');
+            var_dump($_REQUEST);exit;
             $password=password_hash(Input::get('password'),PASSWORD_DEFAULT);
             $user=User::where(array('username'=>'admin','password'=>$password))->get();
             print_r($user);
